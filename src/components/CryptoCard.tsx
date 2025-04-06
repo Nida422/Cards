@@ -1,6 +1,7 @@
  'use client';
 
 import React, { useEffect, useState } from 'react';
+import Image from "next/image";
 
 interface CryptoData {
   name: string;
@@ -65,7 +66,7 @@ export default function CryptoCard() {
       ) : (
         crypto && (
           <div className="flex items-center space-x-4">
-            <img src={crypto.image} alt={crypto.name} className="w-12 h-12" />
+            <Image src={crypto.image} alt={crypto.name} className="w-12 h-12" />
             <div>
               <h3 className="text-xl font-bold">
                 {crypto.name} ({crypto.symbol.toUpperCase()})
