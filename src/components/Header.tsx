@@ -1,5 +1,4 @@
-'use client'
-import { useState } from 'react'
+'use client' 
 
 export default function Header({ setActive }: { setActive: (tab: string) => void }) {
   return (
